@@ -9,6 +9,7 @@ import org.springframework.cloud.gateway.handler.predicate.RoutePredicates.path
 import org.springframework.cloud.gateway.route.gateway
 import org.springframework.context.support.beans
 import org.springframework.web.reactive.function.server.ServerResponse
+import org.springframework.web.reactive.function.server.ServerResponse.*
 import org.springframework.web.reactive.function.server.body
 import org.springframework.web.reactive.function.server.router
 import reactor.core.publisher.Flux
@@ -43,9 +44,9 @@ fun main(args: Array<String>) {
                 }
                 bean {
                     router {
-                        val customerRepository = ref<BlogRepository>()
-                        GET("/blogs/{id}") { ServerResponse.ok().body(customerRepository.findById(it.pathVariable("id"))) }
-                        GET("/blogs") { ServerResponse.ok().body(customerRepository.findAll()) }
+                        val blogRepository = ref<BlogRepository>()
+                        GET("/blogs/{id}") { ok().body(blogRepository.findById(it.pathVariable("id"))) }
+                        GET("/blogs") { ok().body(blogRepository.findAll()) }
                     }
                 }
                 bean {
