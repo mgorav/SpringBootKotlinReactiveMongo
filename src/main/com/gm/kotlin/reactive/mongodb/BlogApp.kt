@@ -25,19 +25,19 @@ fun main(args: Array<String>) {
                 bean {
                     ApplicationRunner {
 
-                        val customerService = ref<BlogRepository>()
+                        val blogRepository = ref<BlogRepository>()
 
                         val customers: Flux<Blog> = arrayOf(Blog(title = "Blog A", content = "Blog A Content"),
                                 Blog(title = "Blog B", content = "Blog B content"),
                                 Blog(title = "Blog C", content = "Blog C content"),
                                 Blog(title = "Blog D", content = "Blog D content"))
                                 .toFlux()
-                                .flatMap { customerService.save(it) }
+                                .flatMap { blogRepository.save(it) }
 
-                        customerService
+                        blogRepository
                                 .deleteAll()
                                 .thenMany(customers)
-                                .thenMany(customerService.findAll())
+                                .thenMany(blogRepository.findAll())
                                 .subscribe { println(it) }
                     }
                 }
