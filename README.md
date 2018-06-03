@@ -12,6 +12,12 @@ This service exposes a Blog APIs build using Spring Boot + Kotlin + Mongo DB usi
 
 4. Kotlin - 1.2.41
 
+5. spring-boot-starter-data-mongodb-reactive
+
+6. spring-boot-starter-webflux
+
+7. spring-cloud-starter-gateway (Finchley.M3)
+
 ## Instruction to setup
 
 ###1. Clone the application

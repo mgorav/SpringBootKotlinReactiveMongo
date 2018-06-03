@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
-    <artifactId>reactive</artifactId>
+    <groupId>com.gm.kotlin.reactive.mongodb</groupId>
+    <artifactId>spring-boot-kotlin-reactive-mongodb</artifactId>
     <version>0.0.1</version>
     <packaging>jar</packaging>
 
-    <name>reactive</name>
-    <description>Demo project for Spring Boot</description>
+    <name>spring-boot-kotlin-reactive-mongodb</name>
+    <description>Spring Kotlin MongoDB</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
