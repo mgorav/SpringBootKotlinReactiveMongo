@@ -1,4 +1,4 @@
-# Spring Boot Odyssey With Reavtive Kotlin + MongoDB
+# Spring Boot Odyssey With Reactive Kotlin + MongoDB
 
 This service exposes a Blog APIs build using Spring Boot + Kotlin + Mongo DB using reactive programing.
 
