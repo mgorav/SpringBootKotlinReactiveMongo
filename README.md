@@ -1,4 +1,4 @@
-# Spring Boot Odyssey With Kotlin + JDBC + H2
+# Spring Boot Odyssey With Reavtive Kotlin + MongoDB
 
 This service exposes a Blog APIs build using Spring Boot + Kotlin + Mongo DB using reactive programing.
 
@@ -17,6 +17,8 @@ This service exposes a Blog APIs build using Spring Boot + Kotlin + Mongo DB usi
 6. spring-boot-starter-webflux
 
 7. spring-cloud-starter-gateway (Finchley.M3)
+
+8. spring-cloud-gateway-kotlin-extensions
 
 ## Instruction to setup
 
