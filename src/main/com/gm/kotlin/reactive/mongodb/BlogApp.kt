@@ -8,6 +8,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder
 import org.springframework.cloud.gateway.handler.predicate.RoutePredicates.path
 import org.springframework.cloud.gateway.route.gateway
 import org.springframework.context.support.beans
+import org.springframework.web.reactive.config.EnableWebFlux
 import org.springframework.web.reactive.function.server.ServerResponse
 import org.springframework.web.reactive.function.server.ServerResponse.*
 import org.springframework.web.reactive.function.server.body
@@ -16,6 +17,7 @@ import reactor.core.publisher.Flux
 import reactor.core.publisher.toFlux
 
 @SpringBootApplication
+@EnableWebFlux
 class BlogApp {}
 
 fun main(args: Array<String>) {
